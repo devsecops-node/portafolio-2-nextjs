@@ -1,0 +1,52 @@
+.home {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ 
+}
+.home main {
+  margin-top: auto;
+}
+
+.text_1,
+.text_2,
+.text_3 {
+  animation: apper 2s;
+  -webkit-animation: apper 2s;
+}
+
+.home main:first-child {
+  text-align: center;
+}
+
+.home footer {
+  margin: auto 0 0 0;
+}
+
+@keyframes apper {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+}
+
+  50% {
+    opacity: 0;
+    transform: translateY(-60px);
+    -webkit-transform: translateY(-60px);
+    -moz-transform: translateY(-60px);
+    -ms-transform: translateY(-60px);
+    -o-transform: translateY(-60px);
+}
+
+  100% {
+    opacity: 1;
+    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+}
+}
